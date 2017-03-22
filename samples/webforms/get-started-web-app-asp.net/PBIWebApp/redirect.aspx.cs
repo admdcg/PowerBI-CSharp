@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace PBIWebApp
 {
@@ -33,10 +34,19 @@ namespace PBIWebApp
                 (Properties.Settings.Default.ClientID,
                 Properties.Settings.Default.ClientSecretKey);
 
-            AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
+            //AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
+            var task = AC.AcquireTokenByAuthorizationCodeAsync(code, new Uri(redirectUri), cc);
 
             //Set Session "authResult" index string to the AuthenticationResult
-            Session["authResult"] = AR;
+            AuthenticationResult AR = task.Result;            
+            
+//            string jsonAR = new JavaScriptSerializer().Serialize(AR);
+            var cookie = new HttpCookie("PwBi_AccessToken", AR.AccessToken)
+            {
+                Expires = DateTime.Now.AddDays(1d)
+            };
+            Response.Cookies.Add(cookie);            
+            //Session["authResult"] = AR;
 
             //Redirect back to Default.aspx
             Response.Redirect("/Default.aspx");

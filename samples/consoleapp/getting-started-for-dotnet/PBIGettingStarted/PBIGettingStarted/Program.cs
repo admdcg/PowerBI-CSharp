@@ -96,24 +96,24 @@ namespace PBIGettingStarted
 
             Console.WriteLine("Rows added");
 
-            //Delete Rows operation
-            Console.WriteLine();
-            Console.WriteLine("Press Enter key to Delete Rows to Dataset:");
-            Console.ReadLine();
+            ////Delete Rows operation
+            //Console.WriteLine();
+            //Console.WriteLine("Press Enter key to Delete Rows to Dataset:");
+            //Console.ReadLine();
 
-            DeleteRows(datasetId, tableName);
+            //DeleteRows(datasetId, tableName);
 
-            Console.WriteLine("Rows deleted");
+            //Console.WriteLine("Rows deleted");
             
-            //Update Table Schema operation
-            Console.WriteLine();
-            Console.WriteLine("Press the Enter key to update a table schema:");
-            Console.ReadLine();
+            ////Update Table Schema operation
+            //Console.WriteLine();
+            //Console.WriteLine("Press the Enter key to update a table schema:");
+            //Console.ReadLine();
 
-            UpdateTableSchema(datasetId, tableName);
+            //UpdateTableSchema(datasetId, tableName);
 
-            Console.WriteLine("Schema updated");
-            Console.WriteLine();
+            //Console.WriteLine("Schema updated");
+            //Console.WriteLine();
 
             //*** Group operations ***
             //To create a group, see [Create a group](https://support.powerbi.com/knowledgebase/articles/654250)

@@ -19,10 +19,18 @@
             <table>
 
             <tr>
-                <td><asp:Button ID="getDatasetsButton" runat="server" OnClick="getDatasetsButton_Click" Text="Get Datasets" /></td>
+                <td><asp:Button ID="cmdDatasetsButton" runat="server" OnClick="cmdDatasetsButton_Click" Text="Get Datasets" /></td>
             </tr>
             <tr>  
-                <td><asp:TextBox ID="resultsTextbox" runat="server" Height="200px" Width="586px" TextMode="MultiLine" Wrap="False"></asp:TextBox></td>
+                <td><asp:Listbox ID="lstDatasets" runat="server" Height="200px" Width="586px"></asp:Listbox></td>
+            </tr>
+
+
+            <tr>
+                <td><asp:Button ID="cmdGetTable" runat="server" OnClick="cmdGetTable_Click" Text="Get Tables" /></td>
+            </tr>
+            <tr>  
+                <td><asp:TextBox ID="txtTables" runat="server" Height="200px" Width="586px" TextMode="MultiLine" Wrap="False"></asp:TextBox></td>
             </tr>
 
             <tr>
@@ -36,6 +44,9 @@
             </tr>
             <tr>
                 <td><asp:TextBox ID="accessTokenTextbox" runat="server" Width="586px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td><asp:Button ID="cmdLogout" runat="server" OnClick="cmdLogout_Click" Text="Logout" /></td>
             </tr>
         </table>
         </asp:Panel>

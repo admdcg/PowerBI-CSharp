@@ -15,6 +15,7 @@ namespace PBIWebApp
     {
         public string Id { get; set; }
         public string Name { get; set; }
+        public Boolean addRowsAPIEnabled { get; set; }
     }
 
     public class Tables
@@ -58,5 +59,16 @@ namespace PBIWebApp
         public DateTime ManufacturedOn { get; set; }
 
         public string NewColumn { get; set; }
+    }
+
+    public class Error
+    {
+        public error error;
+    }
+
+    public class error
+    {
+        public String code { get; set; }
+        public String message { get; set; }
     }
 }

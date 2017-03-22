@@ -40,22 +40,40 @@ namespace PBIWebApp {
         protected global::System.Web.UI.WebControls.Panel PBIPanel;
         
         /// <summary>
-        /// getDatasetsButton control.
+        /// cmdDatasetsButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button getDatasetsButton;
+        protected global::System.Web.UI.WebControls.Button cmdDatasetsButton;
         
         /// <summary>
-        /// resultsTextbox control.
+        /// lstDatasets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox resultsTextbox;
+        protected global::System.Web.UI.WebControls.ListBox lstDatasets;
+        
+        /// <summary>
+        /// cmdGetTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cmdGetTable;
+        
+        /// <summary>
+        /// txtTables control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTables;
         
         /// <summary>
         /// userLabel control.
@@ -74,5 +92,14 @@ namespace PBIWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox accessTokenTextbox;
+        
+        /// <summary>
+        /// cmdLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cmdLogout;
     }
 }
