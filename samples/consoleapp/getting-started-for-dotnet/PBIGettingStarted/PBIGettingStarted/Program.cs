@@ -24,7 +24,7 @@ namespace PBIGettingStarted
     {
         //Step 1 - Replace {client id} with your client app ID. 
         //To learn how to get a client app ID, see Register a client app (https://msdn.microsoft.com/en-US/library/dn877542.aspx#clientID)
-        private static string clientID = "{Client ID from Azure AD app registration}";
+        private static string clientID = "{bfe0a392-aae5-4bb5-bef6-e59723f4abd3}";
 
         //RedirectUri you used when you registered your app.
         //For a client app, a redirect uri gives AAD more details on the specific application that it will authenticate.
